@@ -1,3 +1,8 @@
+:root{
+    --maincolor:  teal;
+    --secondarycolor:red; 
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -31,12 +36,45 @@
     /*animation: name duration timing-function delay iteration-count direction fill-mode;*/
     animation: carmoving 4s infinite linear;
  }
+ @keyframes spiner{
+    from{
+        
+    }
+ }
  @keyframes carmoving{
     from{
         margin-left: 0%;
 
     }
     to{
-        margin-right: 100%;
+        margin-left: 100%;
     }
+ }
+ .card{
+    width:30%;
+    padding:3%;
+    box-shadow: 0px 0px 5px 4px rgb(0, 0,0, 0.4);
+     & p{
+        color:  blue;
+        font-size: 30px;
+         &:hover{
+             color:  var(--maincolor);
+             font-size: 33px;
+         }
+     }
+     &:hover{
+        background-color: blanchedalmond;
+     }
+ }
+ [href^=https]{
+    color:var(--maincolor);
+      &:hover{
+        border:3px solid maroon;
+      }
+ }
+ [href$=html]{
+    color: var(--maincolor);
+     &:hover{
+        color: var(--secondarycolor);
+     }
  }
