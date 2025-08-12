@@ -1,0 +1,21 @@
+.div{
+ height:500px;
+ width:600px;
+ border:5px solid black;
+ margin: auto ;
+}
+.center{
+    align-items: center;
+}
+.h-20px{
+    height: 50px;
+}
+.button:hover{
+    background-color: blueviolet;
+    color:red;
+    transform: scale(1.1);
+    font-size: larger;
+}
+.button{
+    transition: background-color 0.15s ease-in;
+}

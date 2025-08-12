@@ -12,7 +12,7 @@ body{
 }
 .cart-inner{
      
-     transition:all 0.5s ease;
+     transition:all 1s ease;
      transform-style: preserve-3d;
 }
 .img{
